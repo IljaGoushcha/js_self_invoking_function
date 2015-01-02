@@ -17,11 +17,13 @@ console.log("starting Matematika");
 var matematika = {
   num1: 5,
   num2: 6,
-  addTwoNumbers: function(num1, num2) {return num1 + num2;}
+  addTwoNumbers: function(callback_function, num2) {
+    return callback_function() + num2;
+  }
 };
 
 var num1 = 7;
 var num2 = 5;
 
-console.log(matematika.addTwoNumbers(num1, num2));
+// console.log(matematika.addTwoNumbers(num1, num2));
 console.log(matematika.addTwoNumbers(function() {return 10}, num2));
