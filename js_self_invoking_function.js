@@ -26,4 +26,10 @@ var num1 = 7;
 var num2 = 5;
 
 // console.log(matematika.addTwoNumbers(num1, num2));
-console.log(matematika.addTwoNumbers(function() {return 10}, num2));
+console.log(matematika.addTwoNumbers(function() {return 10;}, num2));
+
+console.log("testing push on an object");
+var allUserData = [];
+var person1 = {name:"Rich", speciality:"JavaScript"};
+allUserData.push(person1);
+console.log(allUserData);
