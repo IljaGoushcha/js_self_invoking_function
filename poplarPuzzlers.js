@@ -28,3 +28,13 @@ var applyAndEmpty = function(startValue, queueOfFunctions) {
 }
 
 applyAndEmpty(start, puzzlers);
+
+var puzzlersX = [
+  function ( a ) { return 8*a - 10; },
+  function ( a ) { return (a-3) * (a-3) * (a-3); },
+  function ( a ) { return a * a + 4; },
+  function ( a ) { return a % 5; }
+];
+
+console.log("*** ***");
+console.log((puzzlersX[(puzzlersX[1])(3)])((puzzlersX[3])(9)));
