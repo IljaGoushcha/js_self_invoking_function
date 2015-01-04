@@ -13,18 +13,18 @@ var applyAndEmpty = function(startValue, queueOfFunctions) {
   var outputFunction;
   var lengthOfQueue = queueOfFunctions.length;
   // console.log((queueOfFunctions[0])(2));
-  console.log((queueOfFunctions.shift())(2));
-  console.log("-----");
+  // console.log((queueOfFunctions.shift())(2));
+  // console.log("-----");
 
-  // for (var i = 0; i < lengthOfQueue; i++) {
-  //   outputFunction = queueOfFunctions.shift();
-  //   console.log(outputFunction);
-  //   output = outputFunction(input);
-  //   console.log(output);
-  //   input = output;
-  // }
-  // console.log("***");
-  // console.log(output);
+  for (var i = 0; i < lengthOfQueue; i++) {
+    console.log("counter i=" + i);
+    output = (queueOfFunctions.shift())(input);
+    console.log(output);
+    input = output;
+  }
+  console.log("***");
+  console.log(output);
+  return output;
 }
 
 applyAndEmpty(start, puzzlers);
