@@ -9,3 +9,16 @@ var lighthouseRock = {
   ranger2: {name: "Drew Barontini", skillz: "uppercut launch", station: 3},
   ranger3: {name: "Christine Wong", skillz: "bomb defusing", station: 1}
 };
+
+function addRanger(location, name, skillz, station){
+  console.log("hi")
+  location.numRangers++;
+  location["ranger" + location.numRangers] = {
+    name: name,
+    skillz: skillz,
+    station: station
+  };
+}
+
+addRanger(lighthouseRock, "Ilja Goushcha", "Boxing", 4);
+console.log(lighthouseRock);
