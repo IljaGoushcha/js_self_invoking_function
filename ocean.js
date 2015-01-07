@@ -15,6 +15,9 @@ var lighthouseRock = {
       skillz: skillz,
       station: station
     }
+  },
+  addBulb: function (name, wattage) {
+    superBlinders.push([name, wattage]);
   }
 };
 
@@ -22,3 +25,9 @@ var lighthouseRock = {
 
 lighthouseRock.addRanger("Ilja Goushcha", "Boxing", 4);
 console.log(lighthouseRock);
+
+console.log("***");
+console.log(superBlinders);
+console.log("---");
+lighthouseRock.addBulb("dual-wielding hand crossbow", 4000);
+console.log(superBlinders);
