@@ -34,4 +34,61 @@ lighthouseRock.addBulb("Sight Slayer", 1800);
 lighthouseRock.addBulb("Burner of Souls", 7500);
 console.log(superBlinders);
 
+var vehicle3 = {
+  type: "Submarine", capacity: 8, storedAt: "Underwater Outpost",
+  ranger1: { name: "Gregg Pollack", skillz: "Lasering", dayOff: "Friday"},
+  ranger2: { name: "Bijan Boustani", skillz: "Roundhouse Kicks", dayOff: "Tuesday"},
+  ranger3: { name: "Ashley Smith", skillz: "Torpedoing", dayOff: "Friday"},
+  ranger4: { name: "Mark Krupinski", skillz: "Sniping", dayOff: "Wednesday"},
+  numRangers: 4
+};
+
+console.log("***********");
+
+function relieveDuty(vehicle, day) {
+  var offDuty = [];
+  var onDuty = [];
+  for (var i = 1; i < (vehicle.numRangers + 1); i++) {
+    if (vehicle["ranger" + i.toString()]["dayOff"] == day) {
+      offDuty.push(vehicle["ranger" + i.toString()]);
+    } else {
+      onDuty.push(vehicle["ranger" + i.toString()]);
+    }
+    delete vehicle["ranger" + i.toString()];
+  };
+
+  onDuty.map(function(ranger, i){
+    vehicle["ranger" + (i+1).toString()] = ranger;
+  });
+
+  vehicle["numRangers"] = onDuty.length;
+  return offDuty;
+};
+
+console.log(relieveDuty(vehicle3, "Friday"));
+console.log(vehicle3);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
