@@ -29,5 +29,9 @@ console.log(lighthouseRock);
 console.log("***");
 console.log(superBlinders);
 console.log("---");
-lighthouseRock.addBulb("dual-wielding hand crossbow", 4000);
+lighthouseRock.addBulb("Blasterbright", 5000);
+lighthouseRock.addBulb("Sight Slayer", 1800);
+lighthouseRock.addBulb("Burner of Souls", 7500);
 console.log(superBlinders);
+
+
