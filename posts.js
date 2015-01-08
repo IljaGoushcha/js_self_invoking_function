@@ -3,9 +3,9 @@ function Fencepost(x, y, postNum) {
   this.y = y;
   this.postNum = postNum;
   this.connectionsTo = [];
-  this.sendRopeTo = function(connectedPost) {
-    this.connectionsTo.push(connectedPost);
-  }
+}
+Fencepost.prototype.sendRopeTo = function(connectedPost) {
+  this.connectionsTo.push(connectedPost);
 }
 
 var post18 = new Fencepost(-3, 4, 18);
