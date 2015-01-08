@@ -8,7 +8,7 @@ function Fencepost(x, y, postNum) {
   }
 }
 
-var post11 = new Fencepost(2, 4, 11);
+var post12 = new Fencepost(2, 4, 12);
 console.log(post11);
 
 var genericPost = {
