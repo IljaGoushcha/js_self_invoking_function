@@ -8,6 +8,12 @@ Fencepost.prototype.sendRopeTo = function(connectedPost) {
   this.connectionsTo.push(connectedPost);
 }
 
+Fencepost.prototype.valueOf = function() {
+  var x = this.x;
+  var y = this.y
+  return Math.sqrt(x*x + y*y);
+}
+
 var post18 = new Fencepost(-3, 4, 18);
 var post19 = new Fencepost(5, -1, 19);
 var post20 = new Fencepost(-2, 10, 20);
@@ -19,6 +25,10 @@ post19.sendRopeTo(post18);
 console.log(post18);
 console.log(post19);
 console.log(post20);
+
+console.log("distance to post:");
+console.log(post18.valueOf());
+
 
 var genericPost = {
   x: 0,
