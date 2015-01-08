@@ -79,12 +79,31 @@ var rockSpearguns = {
 
 console.log("*********");
 function listGuns(guns) {
-  for (speargun in guns) {
+  for (var speargun in guns) {
     console.log("Behold! " + speargun + ", with " + guns[speargun]["heft"] + " heft!");
   }
 }
 listGuns(rockSpearguns);
 
+console.log("***** fin *****");
+var rockSpeargunsX = {
+  Sharpshooter: {barbs: 2, weight: 10, heft: "overhand"},
+  Pokepistol: {barbs: 4, weight: 8, heft: "shoulder"},
+  Javelinjet: {barbs: 4, weight: 12, heft: "waist"},
+  Firefork: {barbs: 6, weight: 8, heft: "overhand"},
+  "The Impaler": {barbs: 1, weight: 30, heft: "chest"},
+  listGuns: function() {
+    console.log("hello");
+    for (var speargun in this) {
+      if (this[speargun].barbs == undefined) {
+        console.log("function");
+      } else {
+        console.log("Behold! " + speargun + ", with " + this[speargun]["heft"] + " heft!");
+      }
+    }
+  }
+};
+rockSpeargunsX["listGuns"]();
 
 
 
