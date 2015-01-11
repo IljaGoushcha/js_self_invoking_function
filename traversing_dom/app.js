@@ -1,9 +1,9 @@
 jQuery(document).ready(function() {
   var message = "<p>1-888-9090</p>";
-  $('button').on('click', function() {
-    console.log($(this));
-    $(this).closest('.tour').append(message);
-    $(this).remove();
+  $('.tour').on('click', function() {
+    $(this).append(message);
+    $(this).find('button').remove();
+    $(this).find('div').remove();
   });
 
 });
