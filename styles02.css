@@ -1,5 +1,9 @@
 .navbar.transparent.navbar-default {
-   background: rgba(0,0,0,0.005);
+   background: rgba(0,0,0,0);
+}
+div.three-bars {
+  display: block;
+  float: left;
 }
 #gradient {
   border: 1px solid black;
