@@ -1,9 +1,23 @@
 .navbar.transparent.navbar-default {
    background: rgba(0,0,0,0);
+   border: none;
 }
-div.three-bars {
-  display: block;
+.three-bars {
   float: left;
+  margin-top: 5px;
+}
+button h3 {
+  margin: 0 0 0 3px;
+  font-family: "Helvetica Neue";
+  font-weight: lighter;
+}
+.button1 {
+  width: 88px;
+  border: none;
+}
+.button2 {
+  width: 40px;
+  border: none;
 }
 #gradient {
   border: 1px solid black;
