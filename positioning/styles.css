@@ -1,0 +1,34 @@
+.main {
+  border: 1px solid blue;
+  position: relative;
+  height: 600px;
+  width: 800px;
+}
+.main h1 {
+  position: absolute;
+  top: 30px;
+  right: 200px;
+  border: 1px solid blue;
+}
+.scroll {
+  border: 1px solid blue;
+  overflow: scroll;
+  width: 400px;
+  height: 300px;
+}
+.fixed {
+  position: fixed;
+  top: 80px;
+  right: 30px;
+}
+/* Clear float fix by: Tony Aslett and Nicholas Gallagher*/
+.group:before, .group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  zoom: 1; /* IE6&7 */
+}
