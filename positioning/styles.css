@@ -32,3 +32,20 @@
 .group {
   zoom: 1; /* IE6&7 */
 }
+.one {
+  margin: 20px;
+  border: 1px solid green;
+  width: 200px;
+  height: 200px;
+}
+.two {
+  border: 1px solid green;
+  margin: 10px;
+  width: 200px;
+  height: 200px;
+}
+.three {
+  border: 1px solid green;
+  width: 200px;
+  height: 200px;
+}
