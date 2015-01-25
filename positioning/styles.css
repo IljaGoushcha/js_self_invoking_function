@@ -49,3 +49,25 @@
   width: 200px;
   height: 200px;
 }
+.menu-icon {
+  border: 1px solid green;
+  width: 148px;
+}
+.hamburger-icon {
+  float: left;
+  margin: 8px 0 0 2px;
+  width: 45px;
+}
+.hamburger-icon .bar {
+  background-color: #336680;
+  border-radius: 2px;
+  height: 5px;
+  margin: 4px;
+}
+.menu-icon p {
+  font-family: "Helvetica Neue";
+  font-weight: lighter;
+  margin: 0 0 0 50px;
+  font-size: 40px;
+  color: #336680;
+}
