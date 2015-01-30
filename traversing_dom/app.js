@@ -1,3 +1,13 @@
+function openMenu() {
+  console.log("open");
+  $('.h1').show(500);
+};
+
+function hideMenu() {
+  console.log("hide");
+  $('.h1').hide();
+};
+
 jQuery(document).ready(function() {
   var message = "<p>1-888-9090</p>";
   $('.tour').on('click', function() {
@@ -6,5 +16,8 @@ jQuery(document).ready(function() {
     $(this).find('button').remove();
     $(this).find('div').remove();
   });
+  hideMenu();
+  $('button').on('mouseenter', openMenu);
+  $('button').on('mouseleave', hideMenu);
 
 });
