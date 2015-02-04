@@ -71,3 +71,29 @@
   font-size: 40px;
   color: #336680;
 }
+.hotspot-img {
+  background-image: url("timeline(1200_700).jpg");
+  height: 700px;
+  width: 1200px;
+}
+#hotspot-1 {
+  border: 1px solid green;
+  border-radius: 50%;
+  position: relative;
+  top: 601px;
+  left: 27px;
+  height: 60px;
+  width: 60px;
+}
+#hotspot-1:hover {
+  border: 3px solid red;
+}
+#hotspot-1-message {
+  display: hidden;
+  border: 1px solid green;
+  position: relative;
+  top: -80px;
+  left: 10px;
+  width: 150px;
+  height: 70px;
+}

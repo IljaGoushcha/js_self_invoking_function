@@ -1,0 +1,11 @@
+body {
+  margin: 0;
+}
+
+#page1 {
+  background-image: url("abstract_blue(2880_1920).jpg");
+}
+#page2 {
+  background-image: url("abstract_orange(2880_1920).jpg");
+}
+
