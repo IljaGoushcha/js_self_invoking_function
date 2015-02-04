@@ -97,3 +97,24 @@
   width: 150px;
   height: 70px;
 }
+#hotspot-2 {
+  border: 1px solid green;
+  border-radius: 50%;
+  position: relative;
+  top: 482px;
+  left: 283px;
+  height: 60px;
+  width: 60px;
+}
+#hotspot-2:hover {
+  border: 3px solid red;
+}
+#hotspot-2-message {
+  display: hidden;
+  border: 1px solid green;
+  position: relative;
+  top: -80px;
+  left: 10px;
+  width: 150px;
+  height: 70px;
+}
