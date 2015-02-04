@@ -1,25 +1,20 @@
-function hideHotSpot1() {
-  console.log("hi");
+function hideHotSpots() {
   $('#hotspot-1-message').hide();
-}
-function openHotSpot1() {
-  console.log("hi");
-  $('#hotspot-1-message').show();
-}
-function hideHotSpot2() {
-  console.log("hi");
   $('#hotspot-2-message').hide();
 }
-function openHotSpot2() {
-  console.log("hi");
-  $('#hotspot-2-message').show();
+function hideHotSpot() {
+  console.log(this);
+  $(this).children().hide(500);
+}
+function openHotSpot() {
+  console.log(this);
+  $(this).children().show(500);
 }
 
 jQuery(document).ready(function() {
-  hideHotSpot1();
-  hideHotSpot2();
-  $('#hotspot-1').on('mouseenter', openHotSpot1);
-  $('#hotspot-1').on('mouseleave', hideHotSpot1);
-  $('#hotspot-2').on('mouseenter', openHotSpot2);
-  $('#hotspot-2').on('mouseleave', hideHotSpot2);
+  hideHotSpots();
+  $('#hotspot-1').on('mouseenter', openHotSpot);
+  $('#hotspot-1').on('mouseleave', hideHotSpot);
+  $('#hotspot-2').on('mouseenter', openHotSpot);
+  $('#hotspot-2').on('mouseleave', hideHotSpot);
 });
