@@ -10,7 +10,7 @@ function ChainMail(metal, linkDiameter, hasHood, skirtLength){
   this.skirtLength = skirtLength;
 }
 
-var arrayWithArmor = [{"bodyStyle":"nice leather armor", "numBuckles":8, "numSpaulders": 9}];
+var arrayWithArmor = [ {"bodyStyle":"nice leather armor", "numBuckles":8, "numSpaulders": 9}];
 console.log(arrayWithArmor[0]);
 console.log(arrayWithArmor[0] instanceof LeatherArmor);
 var myLeatherArmor = new LeatherArmor("kjh", 7);
@@ -22,3 +22,16 @@ myChainMail.metal = "platinum";
 myChainMail["linkDiameter"] = 9;
 console.log(myChainMail);
 console.log(myChainMail instanceof ChainMail);
+
+var CAVESOFCLARITY = {
+  stalactites: 4235,
+  stalagmites: 3924,
+  bats: 345,
+  SECRET: {
+    treasureChests: 3,
+    openChest: function(){
+      this.treasureChests--;
+      alert("DA DADADA DAAAAAAA!");
+    }
+  }
+};
