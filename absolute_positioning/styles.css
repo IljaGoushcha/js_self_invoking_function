@@ -1,0 +1,14 @@
+.main {
+  border: 1px solid green;
+  width: 400px;
+  height: 300px;
+  position: relative;
+}
+.secondary {
+  border: 1px solid green;
+  width: 40px;
+  height: 30px;
+  position: absolute;
+  top: 60px;
+  right: 120px;
+}
