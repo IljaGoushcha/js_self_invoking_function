@@ -1,0 +1,12 @@
+.carousel-inner {
+  background-image: url('black_background(2)(1280_700).jpg');
+  height: 300px;
+}
+.item h1 {
+  display: block;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+}
+
